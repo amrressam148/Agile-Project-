@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial</title>
+    <style>
+        *
+{
+    border: px solid black;
+    background-color: rgb(255, 255, 255);
+}
+head
+{
+    background-color: rgb(6, 96, 170);
+    border: 0px;
+}
+html
+{
+    background-color: rgb(6, 96, 170);
+    border: 0px;
+}
+body
+{   background-color: rgb(6, 96, 170);
+    border: 0px;
+}
+div#LoginContanier
+{
+    display: block;
+    height: 80vh;
+    width : 80%;
+    margin: 10% 10% 5% 10%;
+}
+div.LoginTable
+{
+display: table;
+height: 100%;
+width: 100%;
+border: px solid red;
+background-color:rgb(6, 96, 170);
+}
+div.LoginRow1
+{
+display: table-row;
+border: px solid blue;
+height: 20%;
+max-height: 20%;
+width: 100%;
+
+
+}
+div#AiesecLogo
+{
+    display: table-cell;
+    height: 15%;
+    width: 10%;
+    background-color: white;
+
+
+}
+div#AiesecName
+{
+    display: table-cell;
+    height: 15%;
+    width: 80%;
+    border: px solid blue;
+    padding-left: 1%;
+    padding-top:  2%;
+    background-color: white;
+    vertical-align: top;
+
+}
+img#AiesecLogoImg
+{
+    height: 20px;
+    width: 20px;
+    margin: 10% 0% 0% 10%;
+    padding-bottom: 0px
+    ;
+}
+span#AiesecNameSpan
+{
+    height: 100vh;
+    font-size: 100px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+
+}
+div#LoginTable2
+{
+ display: table;
+ background-color: rgb(6, 96, 170);
+
+}
+div.LoginRow2
+{
+display: table-row;
+border: px solid yellow;
+height: 80%;
+width: 100%;
+}
+div#left
+{
+    border: px solid red;
+    display: table-cell;
+    width: 700px;
+    height: 40vh;
+
+
+}
+span.sloganSpan
+{
+    display: inline;
+    background-color: white;
+    font-weight: bold;
+    font-size: 35px;
+    margin-left: 5%;
+
+
+}
+p#descriptionP
+{
+    margin-top: 0px;
+    margin-left: 10%;
+    width: 80%;
+    background-color: white;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+input#usernameText
+{
+    margin-left: 10%;
+    height: 5vh;
+    width: 80%;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 20px;
+
+}
+input#passwordText
+{
+    margin-left: 10%;
+    height: 5vh;
+    width: 80%;
+    background-color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 20px;
+}
+input#signInBtn
+{
+    border: 0px;
+    color: white;
+    margin-left: 10%;
+    height: 5vh;
+    width: 80%;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(6, 96, 170);
+}
+div#right
+{
+    border: px solid blue;
+    display: table-cell;
+    width: 800px;
+    height: 40vh;
+    vertical-align: middle;
+}
+img#AiesecFamPic
+{   display: block;
+    margin: auto;
+
+    width: 100%;
+    height: 40vh;
+
+}
+    </style>
+</head>
+
+    <body>
+        <div id="LoginContanier">
+            <div class="LoginTable1">
+                <div class="LoginRow1">
+                    <div id="AiesecLogo">
+
+                        {% load static %} <img width="180px" height="180px"  src="{% static "aiesec/media/AiesecLogo.png" %}" alt="home" />
+                        
+                    </div>
+                    <div id="AiesecName">
+                        <span id="AiesecNameSpan">
+                            AIESEC
+                        </span>
+                    </div>
+                </div>
+                <br><br><br><br>
+            <div id="LoginTable2">
+                <div class="LoignRow2">
+                    <div id="left">
+                        <span class="sloganSpan">The World's Largest Youth Organization</span><br>
+                        <p id="descriptionP">
+                            We are a youth leadership movement passionately driven by one cause, peace and fulfillment of humankind's potential.
+                        </p>
+                        <form>
+                            <input id ="usernameText" type="text"     placeholder="Username" required><br>
+                            <input id ="passwordText" type="password" placeholder="Password" required><br><br>
+                            <input id ="signInBtn"    type="button" value="Sign In">
+                        </form>
+                    </div>
+                    <div id="right">
+                        {% load static %} <img width="90%" height="400vh"  src="{% static "aiesec/media/Aiesec Family.jpg" %}" alt="home" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+   
+    </body>
+
+</html>
